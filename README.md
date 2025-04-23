@@ -1,29 +1,55 @@
 # Axior: The DeepSeek Moment for AI Hardware
 
-Axior is a chipmaker on a mission to shatter the monopoly of San Francisco AI hardware giants. We are creating a “DeepSeek moment” for the hardware layer. We achieve this by delivering open, modular, and accessible AI chips and modules that empower developers, researchers, and businesses to build, scale, and own their AI infrastructure, without vendor lock-in.
+Axior is a chipmaker on a mission to shatter the monopoly of San Francisco AI hardware giants. We are creating a “DeepSeek moment” for the hardware layer. We achieve this by delivering open, modular, and accessible AI chips and modules that empower developers, researchers, and businesses to build, scale, and own their AI inference infrastructure, without vendor lock-in.
 
-Just as DeepSeek and Llama have democratized access to powerful AI models, Axior is democratizing the silicon that runs them. Our platform is designed for the new wave of local and edge AI, where privacy, cost, and flexibility matter most.
+Just as DeepSeek and Llama have democratized access to powerful AI models, Axior is commoditizing the silicon that runs them. Our platform is designed for the new wave of local and edge AI, where privacy, cost, and flexibility matter most.
+
+<img src="./assets/Ai1_render.png" width="300">
 
 > **Why Inference?**
-> AI innovation is bottlenecked by closed, cloud-centric hardware. Local inference enables privacy, low-latency, and cost-effective deployment. This empowers everyone from researchers to startups to run state-of-the-art models on-premises.
+> AI innovation is bottlenecked by closed, cloud-centric hardware. Local inference enables privacy, low-latency, and cost-effective deployment. This empowers everyone from researchers to SMBs to run state-of-the-art models on-premises.
+>
+> While AI training remains a crucial part of model development, it is still largely confined to massive data centers due to its immense computational and power requirements. Companies like Tenstorrent and others are actively working to challenge NVIDIA's CUDA-based grip on the training ecosystem, but the training market is already well-served by existing infrastructure and ongoing innovation. Inference, on the other hand, is critically underserved. For any real degree of agency and control, AI inference must move to the user and the edge. This shift unleashes a new wave of innovation and competitive betterment of user experience, by empowering a subset of otherwise consumers to become infrastructure providers.
 
-### Why Now? The Rise of Local AI Clusters
+## Why Now? The Rise of Local AI Clusters
 
-- **Mac Mini clusters** are being used to run models like Nemotron 70B and Llama 405B at home and in labs ([heise.de](https://www.heise.de/en/news/Local-AI-Nemotron-70B-on-four-Mac-minis-M4-Pro-with-Thunderbolt-5-interconnect-10015283.html), [Geeky Gadgets](https://www.geeky-gadgets.com/exploring-the-potential-of-m4-mac-mini-clusters-for-machine-learning/)).
-- Unified memory and efficient SoCs (like Apple M4) have enabled new distributed AI setups, but these solutions are expensive, closed, and not modular.
-- The **edge AI hardware market** is projected to grow from $24.2B (2024) to $54.7B (2029) at a 17.7% CAGR ([MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/edge-ai-hardware-market-158498281.html)), driven by demand for private, low-latency AI deployments in everything from smart homes to industrial automation.
+- Mac Mini clusters are already being used for local AI inference ([heise.de](https://www.heise.de/en/news/Local-AI-Nemotron-70B-on-four-Mac-minis-M4-Pro-with-Thunderbolt-5-interconnect-10015283.html), [Geeky Gadgets](https://www.geeky-gadgets.com/exploring-the-potential-of-m4-mac-mini-clusters-for-machine-learning/)), but they are closed, expensive, and not modular.
+- Unified memory and efficient SoCs have enabled new distributed AI setups, but these solutions are expensive, closed, and not modular.
+- The edge AI hardware market is projected to more than double by 2029 ([MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/edge-ai-hardware-market-158498281.html)), with demand for local, private, and scalable inference solutions.
+- No direct competitor offers open, modular, Jetson-compatible SoMs with unified DDR5 memory and clustering support.
+- Axior is positioned to be the **“Raspberry Pi of AI”**, the foundation for the next generation of open, accessible, and scalable AI hardware.
 
----
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://x.com/WilmsRolf/status/1913237853267505351">
+        <img src="./assets/WilmsRolf.png" alt="Tweet by @WilmsRolf"><br>
+        Tweet by @WilmsRolf
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://x.com/hehehenrihenri/status/1913161609507205549">
+        <img src="./assets/hehehenrihenri.png" alt="Tweet by @hehehenrihenri"><br>
+        Tweet by @hehehenrihenri
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/posts/amitkumar_dragonfruit-ai-has-the-worlds-largest-distributed-activity-7319051507281063937-wfAQ/">
+        <img src="./assets/amitkumar.png" alt="LinkedIn post by Amit Kumar"><br>
+        LinkedIn post by Amit Kumar
+      </a>
+    </td>
+  </tr>
+</table>
 
-<img src="./Ai1_render.png" width="300">
-
-# Axior Ai1 Platform
 
 ## Mission
-Axior is building the “Raspberry Pi of AI”—open, modular, and accessible AI hardware for the next wave of application-layer AI. Our platform is designed for:
+Axior is building the “Raspberry Pi of AI”,open, modular, and accessible AI hardware for the next wave of application-layer AI. Our platform is designed for:
 - **DIY AI enthusiasts** building local clusters
 - **Consumer devices** (smart devices, robots, kiosks) with on-board AI
 - **AI Application Developers and SMBs** needing scalable, open, and affordable inference
+
+*Axior Ai1* empowers a new era of **open, scalable, on-device AI**,undercutting closed ecosystems and making local inference accessible to all.
 
 ## Why Yet Another AI Chip?
 Despite advances in smartphone and server AI accelerators, there is **no open, modular SoM** optimized for edge inference. Apple, NVIDIA, and Google offer powerful solutions, but they are:
@@ -35,18 +61,55 @@ Axior Ai1 is the first SoC/SoM to combine:
 - **Jetson NX pin compatibility** for drop-in upgrades
 - **Unified DDR5 memory** (up to 512GB with 4 slots, future-proofed to 1TB+)
 - **Open toolchain** (ONNX, vLLM, TFLite, TVM, MLIR, PyTorch)
-- **Modular clustering**—carriers can host 1–4 SoMs, interconnected via PCIe or 10GbE
+- **Modular clustering**,carriers can host 1–4 SoMs, interconnected via PCIe or 10GbE
+
+### Go-to-Market & Use Cases
+
+Axior’s initial focus is on empowering developers, researchers, and startups who require affordable, scalable, and private AI inference at the edge. Early use cases include:
+
+- Local AI clusters for research labs and universities
+- Smart device manufacturers seeking on-device intelligence
+- Privacy-first applications in healthcare, robotics, and IoT
+- AI hobbyists and makers building custom solutions
+
+Our modular approach allows rapid prototyping and deployment, making Axior the platform of choice for innovators who demand control and flexibility.
+
+### Competitive Landscape
+
+The AI hardware market is dominated by closed, cloud-centric solutions from established giants (NVIDIA, Google, Apple), optimized for hyperscale data centers and proprietary ecosystems. New entrants like Tenstorrent are innovating in training acceleration, and Flex Logix provides valuable IP cores (which Axior leverages in our designs), but none address the critical gap in open, modular, edge-focused AI inference.
+
+**Axior is not just competing; we are opening an entirely new segment:**  
+We empower advanced users, makers, and innovators,those who have been mere consumers,to become infrastructure providers themselves. This is a transformative shift, democratizing access to AI hardware and enabling a wave of user-driven innovation at the edge.
+
+| Company      | Openness | Modularity | Edge Focus | Ecosystem         | Role to Axior      |
+|--------------|----------|------------|------------|-------------------|--------------------|
+| NVIDIA       | Closed   | Limited    | Partial    | Proprietary       | Incumbent          |
+| Google       | Closed   | Limited    | Partial    | Proprietary       | Incumbent          |
+| Apple        | Closed   | No         | Yes        | Proprietary       | Incumbent          |
+| Groq         | Closed   | No         | Cloud-only | Growing           | High-Perf Inference|
+| Tenstorrent  | Partial  | Partial    | No         | Growing           | Training Innovator |
+| Flex Logix   | IP Vendor| N/A        | N/A        | IP Core Supplier  | Technology Partner |
+| Axior        | Open     | Full       | Full       | Open & Inclusive  | Market Creator     |
+
+### Market Creation & Vision
+
+Axior is not just capturing share from incumbents,we are creating a new category of open, user-empowered AI infrastructure. By lowering the barrier to entry for edge inference and enabling users to become infrastructure providers, we unlock new forms of innovation, business models, and user experiences that were previously impossible in a closed ecosystem.
+
+
+---
+
+# Axior Ai1 Platform
 
 ## Market Segment & Vision
 - **Phase 1:** Maker communities, researchers, and local AI clusters
 - **Phase 2:** Consumer-grade devices and commercial appliances
-- **Phase 3:** Direct SoC sales—becoming the “RK3588 of AI inference” powering the next generation of open AI platforms
+- **Phase 3:** Direct SoC sales,becoming the “RK3588 of AI inference” powering the next generation of open AI platforms
 
-> Just as the RK3588 SoC powers most Chinese IoT devices andSBCs that previously relied on Raspberry Pi, Axior Ai1 is designed to be the foundation for the next wave of open AI solutions—enabling everything from hobbyist clusters to commercial appliances.
+> Just as the RK3588 SoC powers most Chinese IoT devices and SBCs, Axior Ai1 is designed to be the foundation for the next wave of open AI solutions, enabling everything from hobbyist clusters to commercial appliances.
 
 ---
 
-# Axior Ai1 SoM: Jetson-Compatible, Massively Modular
+## Axior Ai1 SoM: Jetson-Compatible, Massively Modular
 
 | Feature         | Specification                                      |
 |-----------------|----------------------------------------------------|
@@ -65,7 +128,7 @@ Axior Ai1 is the first SoC/SoM to combine:
 
 ---
 
-# Axior Ai1 SoC: Open, Scalable, Future-Proof
+## Axior Ai1 SoC: Open, Scalable, Future-Proof
 
 | Subsystem        | IP Core / Vendor                        | Features / Differentiators                       |
 |------------------|-----------------------------------------|-------------------------------------------------|
@@ -86,41 +149,99 @@ Axior Ai1 is the first SoC/SoM to combine:
 
 ---
 
-# Architectural Decisions & Differentiators
+## Architectural Decisions & Differentiators
 
 - **4× DDR5 SODIMM slots**: Each channel supports a full-speed UDIMM; future quad-rank or RDIMM could enable 1TB+.
-- **Unified memory**: Enables large LLMs, multimodal models, and efficient clustering—outclassing fixed-RAM solutions (Apple, NVIDIA, Coral, Hailo, etc).
+- **Unified memory**: Enables large LLMs, multimodal models, and efficient clustering,outclassing fixed-RAM solutions (Apple, NVIDIA, Coral, Hailo, etc).
 - **Jetson NX compatibility**: Enables drop-in upgrades and leverages a vast ecosystem of carrier boards and accessories.
 - **Open toolchain**: Supports ONNX, vLLM, TFLite, TVM, MLIR, PyTorch out of the box.
 - **Clustering**: Carrier boards can be designed for single or multi-SoM (1, 2, or 4 modules), interconnected via PCIe switch or 10GbE. Management handled by on-board CPUs.
 
 ---
 
-# Clustering & Carrier Board Ecosystem
+## Clustering & Carrier Board Ecosystem
 
 - **Single SoM**: Compact, affordable, and ideal for desktop or embedded use
 - **Dual/Quad SoM**: Carrier boards for scale-out, micro-rack, or edge inference clusters
 - **Interconnect**: PCIe mesh or 10GbE fabric; low-latency, high-throughput for LLM serving
-- **Future-proof**: As model sizes and RAM needs grow, the modular DDR5 design enables affordable upgrades—no soldered limits
+- **Future-proof**: As model sizes and RAM needs grow, the modular DDR5 design enables affordable upgrades,no soldered limits
 
 ---
 
-# Market & Vision: Why Axior, Why Now?
+# Team
 
-- **Mac Mini clusters** are already being used for local AI inference ([heise.de](https://www.heise.de/en/news/Local-AI-Nemotron-70B-on-four-Mac-minis-M4-Pro-with-Thunderbolt-5-interconnect-10015283.html), [Geeky Gadgets](https://www.geeky-gadgets.com/exploring-the-potential-of-m4-mac-mini-clusters-for-machine-learning/)), but they are closed, expensive, and not modular.
-- The **edge AI hardware market** is projected to more than double by 2029 ([MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/edge-ai-hardware-market-158498281.html)), with demand for local, private, and scalable inference solutions.
-- **No direct competitor** offers open, modular, Jetson-compatible SoMs with unified DDR5 memory and clustering support.
-- Axior is positioned to be the “Raspberry Pi of AI”—the foundation for the next generation of open, accessible, and scalable AI hardware.
+TransposeReal (Axior's parent company) is founded and led by Keyvan M. Sadeghi, a pioneer in AGI research and a proven hardware innovator.
+
+- MSc in Artificial Intelligence (Distinction), University of Southampton
+- Early AGI researcher at OpenCog Lab (Hong Kong, 2012), with multiple academic publications in AI
+- Senior software and hardware architect, with deep experience in distributed systems, MLOps, and product development
+- Led Functionland’s successful crowdfunding, raising over $500,000 and delivering a novel decentralized hardware product to market ([Indiegogo Campaign](https://indiegogo.com/at/functionland))
+- Built and scaled AI teams and products across startups and enterprises (see full details in [Keyvan’s resume](./assets/Keyvan.pdf))
+- Recognized for open source leadership, community building, and bridging research with real-world impact
+
+Keyvan’s unique blend of technical depth, entrepreneurial execution, and community engagement positions Axior to deliver on its bold vision.
 
 ---
 
-# Resources & Further Reading
-- [Local AI: Nemotron 70B on four Mac minis M4 Pro with Thunderbolt 5 interconnect (heise.de)](https://www.heise.de/en/news/Local-AI-Nemotron-70B-on-four-Mac-minis-M4-Pro-with-Thunderbolt-5-interconnect-10015283.html)
-- [Exploring the Potential of M4 Mac Mini Clusters for Machine Learning (Geeky Gadgets)](https://www.geeky-gadgets.com/exploring-the-potential-of-m4-mac-mini-clusters-for-machine-learning/)
-- [Edge AI Hardware Market Size, Share and Growth Analysis (MarketsandMarkets)](https://www.marketsandmarkets.com/Market-Reports/edge-ai-hardware-market-158498281.html)
+## Execution Plan and Milestones
+
+**Ideal 6-Month Plan:**
+
+| Month  | Milestone                                                        |
+|--------|------------------------------------------------------------------|
+| 1      | Lock IP deals, finalize floorplan & packaging strategy           |
+| 2      | RTL handoff to backend, start SoM + carrier PCB layout           |
+| 3      | Tape-out SoC, DVT board revision, software stack development     |
+| 4      | SoC sample validation, Jetson pinout testbench                   |
+| 5      | DDR5 + PCIe validation, vLLM benchmark baseline                  |
+| 6      | EVT build, software beta, developer kits pre-order ready         |
+
+**Alternative Timeline:**
+Given the complexity of silicon projects, a 9–12 month timeline is also considered, allowing for additional validation, respins, and developer engagement.
+
+**Team Structure:**
+- 1 Silicon Architect
+- 1 Embedded Systems Lead
+- 2 Hardware Design Engineers
+- 2 NPU Compiler/ML Infra Engineers
+- 1 Product/Program Manager
+- 1 Business/BD (co-founder level)
+
+Engagement with Tier 1 partners (TSMC, ASE, Avnet) and proven vendors for layout, fab, and compliance ensures quality and scalability.
 
 ---
 
-*Axior Ai1* empowers a new era of **open, scalable, on-device AI**—undercutting closed ecosystems and making local inference accessible to all.
+## Budget & Use of Funds
+
+**Target Raise:** ~$4.3M USD (includes 20% margin for unforeseen costs)
+
+| Category                        | Budget (USD)    | Notes                                                                 |
+|----------------------------------|-----------------|-----------------------------------------------------------------------|
+| SoC Design (IP, RTL, DFT, backend) | $1,500,000      | TSMC NRE, Flex Logix & Arm IP, DFT, EDA tools, backend engineering     |
+| SoM & SBC Hardware (prototyping, EVT, DVT) | $600,000        | Fabrication, packaging, PCB layout, validation, test equipment         |
+| Software (kernel, firmware, drivers, vLLM stack) | $500,000        | Linux BSP, NPU compiler, Hugging Face/vLLM, optimization, QA           |
+| Operations (team, legal, admin, travel) | $720,000        | 8 FTEs for 12 months, legal, compliance, travel, insurance             |
+| Manufacturing Prep (CM onboarding, QA, packaging) | $480,000        | BOM, DFx, compliance, CM onboarding, pilot run, packaging              |
+| Marketing, Developer Program, Community | $200,000        | Early developer kits, outreach, hackathons, documentation, support     |
+| Buffer & Contingency             | $300,000        | Slippage, memory price volatility, unexpected expenses                 |
+| **Total**                        | **$4,300,000**  |                                                                       |
+
+This budget ensures sufficient runway for a full tapeout and developer kit launch, with a 20% margin for error and a strong community/developer program.
+
+---
+
+## Risks & Mitigations
+
+| Risk Area                | Description                                                                 | Mitigation Strategy                                               |
+|--------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Timeline Slippage        | Silicon projects often encounter delays (IP, tapeout, validation)            | Buffer in budget, alternative 9–12 month plan, modular milestones |
+| Team Recruitment         | Difficulty sourcing top-tier silicon/ML talent quickly                      | Leverage advisors, consultants, and proven vendor partnerships    |
+| Budget Overruns          | NRE, prototyping, or respin costs may exceed estimates                      | Contingency fund, phased spending, milestone-based vendor payouts |
+| Market Adoption          | Education and GTM for new open hardware category                            | Early developer engagement, strong community, pre-orders          |
+| Post-Tapeout Support     | Developer kit support and software stack polish may require extra resources | Allocate bandwidth, phased rollout, leverage open source          |
+
+Axior’s modular strategy, use of proven IP, and focus on community engagement all help to de-risk execution while maximizing impact.
 
 > For more, contact: Keyvan M. Sadeghi, Founder, TransposeReal | keyvan@treal.world
+
+**Book a meeting:** [https://calendly.com/keyvan-m-sadeghi](https://calendly.com/keyvan-m-sadeghi)
