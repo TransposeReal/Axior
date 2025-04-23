@@ -35,7 +35,7 @@ Just as DeepSeek and Llama have democratized access to powerful AI models, Axior
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/posts/amitkumar_dragonfruit-ai-has-the-worlds-largest-distributed-activity-7319051507281063937-wfAQ/">
-        <img src="./assets/amitkumar.png" alt="LinkedIn post by Amit Kumar"><br>
+        <img src="./assets/AmitKumar.png" alt="LinkedIn post by Amit Kumar"><br>
         LinkedIn post by Amit Kumar
       </a>
     </td>
