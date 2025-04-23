@@ -17,7 +17,6 @@ Just as DeepSeek and Llama have democratized access to powerful AI models, Axior
 - Unified memory and efficient SoCs have enabled new distributed AI setups, but these solutions are expensive, closed, and not modular.
 - The edge AI hardware market is projected to more than double by 2029 ([MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/edge-ai-hardware-market-158498281.html)), with demand for local, private, and scalable inference solutions.
 - No direct competitor offers open, modular, Jetson-compatible SoMs with unified DDR5 memory and clustering support.
-- Axior is positioned to be the **“Raspberry Pi of AI”**, the foundation for the next generation of open, accessible, and scalable AI hardware.
 
 <table>
   <tr>
@@ -44,12 +43,12 @@ Just as DeepSeek and Llama have democratized access to powerful AI models, Axior
 
 
 ## Mission
-Axior is building the “Raspberry Pi of AI”,open, modular, and accessible AI hardware for the next wave of application-layer AI. Our platform is designed for:
+Axior is building the **“Raspberry Pi of AI”**, the foundation for the next generation of open, accessible, and scalable AI hardware, to power the new wave of local AI innovation. Our platform is designed for:
 - **DIY AI enthusiasts** building local clusters
 - **Consumer devices** (smart devices, robots, kiosks) with on-board AI
 - **AI Application Developers and SMBs** needing scalable, open, and affordable inference
 
-*Axior Ai1* empowers a new era of **open, scalable, on-device AI**,undercutting closed ecosystems and making local inference accessible to all.
+*Axior Ai1* unlocks an emergent market segment, undercutting closed ecosystems, by making local inference accessible to all.
 
 ## Why Yet Another AI Chip?
 Despite advances in smartphone and server AI accelerators, there is **no open, modular SoM** optimized for edge inference. Apple, NVIDIA, and Google offer powerful solutions, but they are:
@@ -143,9 +142,10 @@ Axior is not just capturing share from incumbents,we are creating a new category
 | **PMIC**         | Dialog DA9063-L or Renesas RAA215300    | Multi-rail, DDR5 VPP, sequencing                 |
 | **Process**      | TSMC N7/N6 (130–140 mm² die)            | Low power: ~3W idle, 18–25W peak                 |
 
-- **Estimated SoC cost**: $30–40 @100K units
-- **Full SoM (8GB RAM) target**: $129–149 retail
-- **Scales to $199–249 with 32–64GB modules**
+- **Estimated SoC retail cost**: $30–40 (assuming ~100K internal production volume)
+- **Entry-tier**: $149–179 for Ai1 SoM with 32GB DDR5 unified memory (usable by AI models)
+- **Scales to $199–249 with 64GB modules or higher**
+- **Modular RAM**: Users can plug in off-the-shelf DDR5, this is our unique differentiator
 
 ---
 
