@@ -62,7 +62,7 @@ Axior Ai1 is the first SoC/SoM to combine:
 - **Jetson NX pin compatibility** for drop-in upgrades
 - **Unified DDR5 memory** (up to 512GB with 4 slots, future-proofed to 1TB+)
 - **Open toolchain** (ONNX, vLLM, TFLite, TVM, MLIR, PyTorch)
-- **Modular clustering**,carriers can host 1–4 SoMs, interconnected via PCIe or 10GbE
+- **Modular clustering**, carriers can host 1–4 SoMs, interconnected via PCIe or 10GbE
 
 ### Go-to-Market & Use Cases
 
@@ -80,7 +80,7 @@ Our modular approach allows rapid prototyping and deployment, making Axior the p
 The AI hardware market is dominated by closed, cloud-centric solutions from established giants (NVIDIA, Google, Apple), optimized for hyperscale data centers and proprietary ecosystems. New entrants like Tenstorrent are innovating in training acceleration, and Flex Logix provides valuable IP cores (which Axior leverages in our designs), but none address the critical gap in open, modular, edge-focused AI inference.
 
 **Axior is not just competing; we are opening an entirely new segment:**  
-We empower advanced users, makers, and innovators,those who have been mere consumers,to become infrastructure providers themselves. This is a transformative shift, democratizing access to AI hardware and enabling a wave of user-driven innovation at the edge.
+We empower advanced users, makers, and innovators, those who have been mere consumers, to become infrastructure providers themselves. This is a transformative shift, democratizing access to AI hardware and enabling a wave of user-driven innovation at the edge.
 
 | Company      | Openness | Modularity | Edge Focus | Ecosystem         | Role to Axior      |
 |--------------|----------|------------|------------|-------------------|--------------------|
@@ -92,10 +92,9 @@ We empower advanced users, makers, and innovators,those who have been mere consu
 | Flex Logix   | IP Vendor| N/A        | N/A        | IP Core Supplier  | Technology Partner |
 | Axior        | Open     | Full       | Full       | Open & Inclusive  | Market Creator     |
 
-### Market Creation & Vision
+### Vision
 
-Axior is not just capturing share from incumbents,we are creating a new category of open, user-empowered AI infrastructure. By lowering the barrier to entry for edge inference and enabling users to become infrastructure providers, we unlock new forms of innovation, business models, and user experiences that were previously impossible in a closed ecosystem.
-
+Axior envisions a world where AI hardware is as open, accessible, and customizable as software. Our goal is to make advanced AI infrastructure available to anyone, anywhere, without barriers. We believe this will spark entirely new applications, empower communities globally, and drive the next wave of user-driven, sovereign AI solutions. By setting a new standard for openness and modularity, Axior aims to become the foundational platform for the future of local and distributed AI.
 
 ---
 
@@ -104,7 +103,7 @@ Axior is not just capturing share from incumbents,we are creating a new category
 ## Market Segment & Vision
 - **Phase 1:** Maker communities, researchers, and local AI clusters
 - **Phase 2:** Consumer-grade devices and commercial appliances
-- **Phase 3:** Direct SoC sales,becoming the “RK3588 of AI inference” powering the next generation of open AI platforms
+- **Phase 3:** Direct SoC sales, becoming the “RK3588 of AI inference” powering the next generation of open AI platforms
 
 > Just as the RK3588 SoC powers most Chinese IoT devices and SBCs, Axior Ai1 is designed to be the foundation for the next wave of open AI solutions, enabling everything from hobbyist clusters to commercial appliances.
 
@@ -154,7 +153,7 @@ Axior is not just capturing share from incumbents,we are creating a new category
 ## Architectural Decisions & Differentiators
 
 - **4× DDR5 SODIMM slots**: Each channel supports a full-speed UDIMM; future quad-rank or RDIMM could enable 1TB+.
-- **Unified memory**: Enables large LLMs, multimodal models, and efficient clustering,outclassing fixed-RAM solutions (Apple, NVIDIA, Coral, Hailo, etc).
+- **Unified memory**: Enables large LLMs, multimodal models, and efficient clustering, outclassing fixed-RAM solutions (Apple, NVIDIA, Coral, Hailo, etc).
 - **Jetson NX compatibility**: Enables drop-in upgrades and leverages a vast ecosystem of carrier boards and accessories.
 - **Open toolchain**: Supports ONNX, vLLM, TFLite, TVM, MLIR, PyTorch out of the box.
 - **Clustering**: Carrier boards can be designed for single or multi-SoM (1, 2, or 4 modules), interconnected via PCIe switch or 10GbE. Management handled by on-board CPUs.
@@ -166,7 +165,7 @@ Axior is not just capturing share from incumbents,we are creating a new category
 - **Single SoM**: Compact, affordable, and ideal for desktop or embedded use
 - **Dual/Quad SoM**: Carrier boards for scale-out, micro-rack, or edge inference clusters
 - **Interconnect**: PCIe mesh or 10GbE fabric; low-latency, high-throughput for LLM serving
-- **Future-proof**: As model sizes and RAM needs grow, the modular DDR5 design enables affordable upgrades,no soldered limits
+- **Future-proof**: As model sizes and RAM needs grow, the modular DDR5 design enables affordable upgrades, no soldered limits
 
 ---
 
@@ -182,6 +181,11 @@ TransposeReal (Axior's parent company) is founded and led by Keyvan M. Sadeghi, 
 - Recognized for open source leadership, community building, and bridging research with real-world impact
 
 Keyvan’s unique blend of technical depth, entrepreneurial execution, and community engagement positions Axior to deliver on its bold vision.
+
+**From concept to production:** Real-world experience delivering advanced SoM platforms.
+
+![FxBlox RK1](./assets/FxBlox_RK1.jpg)
+*Functionland's RK1 SBC, featuring the RK3588 SoC: demonstrating Keyvan's proven track record in SoM and product development.*
 
 ---
 
