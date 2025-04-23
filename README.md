@@ -41,6 +41,8 @@ Just as DeepSeek and Llama have democratized access to powerful AI models, Axior
   </tr>
 </table>
 
+> Today’s innovators are forced to build expensive, closed Mac Mini clusters for local AI. Axior unlocks this capability for everyone: open, modular, and affordable.
+
 
 ## Mission
 Axior is building the **“Raspberry Pi of AI”**, the foundation for the next generation of open, accessible, and scalable AI hardware, to power the new wave of local AI innovation. Our platform is designed for:
