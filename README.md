@@ -1,6 +1,6 @@
 # Axior: The DeepSeek Moment for AI Hardware
 
-Axior is a chipmaker on a mission to shatter the monopoly of San Francisco AI hardware giants. We are creating a “DeepSeek moment” for the hardware layer. We achieve this by delivering open, modular, and accessible AI chips and modules that empower developers, researchers, and businesses to build, scale, and own their AI inference infrastructure, without vendor lock-in.
+Axior is a chipmaker on a mission to shatter the monopoly of San Francisco AI inference giants. We are creating a “DeepSeek moment” for the hardware layer. We achieve this by delivering open, modular, and accessible AI chips and modules that empower developers, researchers, and businesses to build, scale, and own their AI inference infrastructure, without vendor lock-in.
 
 Just as DeepSeek and Llama have democratized access to powerful AI models, Axior is commoditizing the silicon that runs them. Our platform is designed for the new wave of local and edge AI, where privacy, cost, and flexibility matter most.
 
